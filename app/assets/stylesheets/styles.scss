@@ -1,9 +1,9 @@
-/*$white: rgba(248, 255, 229, 1);
+$white: rgba(248, 255, 229, 1);
 $black: rgba(28, 17, 10, 1);
 $blue: rgba(0, 123, 167, 1);
 $red: rgba(204, 54, 46, 1);
 $yellow: rgba(255, 196, 61, 1);
-$green: #11b237*/
+$green: #11b237;
 
 body {
   background-color: rgba(0, 123, 167, 1);
@@ -12,7 +12,7 @@ body {
 .container {
   clear: both;
   text-align: center;
-  background-color: $blue;
+  background-color: $red;
 }
 
 .navbar {
