@@ -1,0 +1,86 @@
+$white: rgba(248, 255, 229, 1);
+$black: rgba(28, 17, 10, 1);
+$blue: rgba(0, 123, 167, 1);
+$red: rgba(204, 54, 46, 1);
+$yellow: rgba(255, 196, 61, 1);
+$green: #11b237;
+
+body {
+  background-color: rgba(0, 123, 167, 1);
+}
+
+.container {
+  clear: both;
+  text-align: center;
+  background-color: $red;
+  border: $white 2px solid;
+  border-radius: 8%;
+  margin: auto;
+  padding: 5px;
+  width: 80%;
+}
+
+.navbar {
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+#get_healthy {
+  display: inline;
+  position: relative;
+  top: -47px;
+  left: 45px;
+}
+
+#star {
+  position: relative;
+  top: 55px;
+  left: -40px;
+}
+
+#links {
+  float: right;
+  display: inline;
+}
+
+a {
+  color: rgba(248, 255, 229, 1);
+}
+
+a:visited {
+  color: rgba(255, 196, 61, 1)
+}
+
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  width: 100%;
+  height: 200px;
+  background-color: grey;
+}
+
+#floating-panel {
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#directionsPanel {
+  margin: auto;
+  width: 80%;
+  height: 90%;
+}
+
+form {
+  margin: 10px;
+}
+
+input[type=submit] {
+  margin: 10px;
+}

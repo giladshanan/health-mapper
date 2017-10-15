@@ -1,0 +1,20 @@
+<h5>Your nearest provider is:</h5>
+<h3><%= @provider.name %></h3>
+<h4><%= @provider.address %></h4>
+
+<div id="floating-panel">
+<b>Mode of Travel: </b>
+<select id="mode">
+  <option value="DRIVING">Driving</option>
+  <option value="WALKING">Walking</option>
+  <option value="BICYCLING">Bicycling</option>
+  <option value="TRANSIT">Transit</option>
+</select>
+</div>
+<div id="start"><%= @origin %></div>
+<div id="dest"><%= @destination %></div>
+<div id="map"></div>
+<div id="directionsPanel"></div>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['GOOGLE_MAPS_API'] %>&callback=initMap">
+</script>
