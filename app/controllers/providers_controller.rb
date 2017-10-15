@@ -3,6 +3,8 @@ class ProvidersController < ApplicationController
   end
 
   def find
+    @origin = "USA, Chicago, #{params[:address]}"
+    @destination = Provider.near(@origin)[0].full_address
     @provider = Provider.near("USA, Chicago, #{params[:address]}")[0]
   end
 

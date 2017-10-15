@@ -4,9 +4,9 @@ Users can create a secure account with full name, email and password.  Optional 
 
 Users can enter a location or allow the app to use IP coordinates to find their current location.  (Bonus feature - dynamic map allows users to specify a location by dropping a pin)
 
-The app returns a list of the nearest office locations for Health Navigators, with phone and address.
+The app returns a list of the 3 nearest office locations for Health Navigators, with phone and address.
 
-Below the list, a map will display 2-3 nearest options and the driving route.
+Below the list, a map will display the 3 nearest options and the driving route.
 Select a route and you are offered the option to open in google maps app.
 
 Users have a profile page where they can store data about their providers.
