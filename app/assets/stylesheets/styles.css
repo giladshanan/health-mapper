@@ -1,12 +1,12 @@
-$white: rgba(248, 255, 229, 1);
+/*$white: rgba(248, 255, 229, 1);
 $black: rgba(28, 17, 10, 1);
 $blue: rgba(0, 123, 167, 1);
 $red: rgba(204, 54, 46, 1);
 $yellow: rgba(255, 196, 61, 1);
-$green: #11b237
+$green: #11b237*/
 
 body {
-  background-color: lightskyblue;
+  background-color: rgba(0, 123, 167, 1);
 }
 
 .container {
@@ -38,4 +38,12 @@ body {
 #links {
   float: right;
   display: inline;
+}
+
+a {
+  color: rgba(248, 255, 229, 1);
+}
+
+a:visited {
+  color: rgba(255, 196, 61, 1)
 }

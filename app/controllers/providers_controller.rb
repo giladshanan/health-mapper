@@ -17,6 +17,10 @@ class ProvidersController < ApplicationController
     end
   end
 
+  def show
+    @provider = Provider.find(params[:id])
+  end
+
   private
 
   def place_params

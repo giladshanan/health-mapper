@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   resources :providers, except: [:update, :edit, :destroy]
 
-  root "users#new"
+  root "providers#index"
 
 
 end
