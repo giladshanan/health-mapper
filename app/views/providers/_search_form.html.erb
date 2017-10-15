@@ -1,9 +1,6 @@
 <%= form_tag search_path, method: "get" do %>
-  <fieldset>
-    <small class="text-muted">You can enter an address or IP. Your IP is <%= request.ip %></small><br>
-    <%= label_tag :address, 'Address' %>
-    <%= text_field_tag :address, request.ip %>
-  </fieldset>
-
+  <small class="text-muted">You can enter an address or IP. Your IP is <%= request.ip %></small><br>
+  <%= label_tag :address, 'Address' %>
+  <%= text_field_tag :address, request.ip %>
   <%= submit_tag 'Find!', class: 'btn btn-primary' %>
 <% end %>

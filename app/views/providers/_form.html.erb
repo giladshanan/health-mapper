@@ -1,14 +1,13 @@
 <%= form_for @provider do |f| %>
-  <fieldset class="form-group">
+  <div class="form-group">
     <%= f.label :name %>
     <%= f.text_field :name, class: "form-control" %>
-  </fieldset>
-
-  <fieldset class="form-group">
+  </div>
+  <div class="form-group">
     <small class="text-muted">You can enter an address or IP. Your IP is <%= request.ip %></small><br>
     <%= f.label :address, 'Address' %>
     <%= f.text_field :address, class: "form-control", value: request.ip %>
-  </fieldset>
-
+  </div>
+  <br>
   <%= f.submit 'Add!', class: 'btn btn-primary' %>
 <% end %>

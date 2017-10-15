@@ -1,11 +1,13 @@
 class ProvidersController < ApplicationController
+  before_action :authorize
+
   def search
   end
 
   def find
     @origin = "USA, Chicago, #{params[:address]}"
-    @destination = Provider.near(@origin)[0].full_address
-    @provider = Provider.near("USA, Chicago, #{params[:address]}")[0]
+    @provider = Provider.near(@origin)[0]
+    @destination = @provider.full_address
   end
 
   def index
