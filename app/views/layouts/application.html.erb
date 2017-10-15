@@ -9,15 +9,16 @@
   </head>
 
   <body>
-     <div id="get_healthy">
-          <h2>Get Healthy!</h2>
-        </div>
-      <nav class="navbar">
-        <div id="links">
-        <%= link_to "Home" , root_path %> | <% if current_user %> <%= link_to "Logout", logout_path %> <% else %>
-        <%= link_to "Sign Up", users_path %> | <%= link_to "Login", login_path %> <% end %>
-        </div>
-      </nav>
+    <div id="get_healthy">
+      <%= image_tag("star", size: "35", alt: "Chicago Star", id:"star") %>
+      <h2> Get Healthy!</h2>
+    </div>
+    <nav class="navbar">
+      <div id="links">
+      <%= link_to "Home" , root_path %> | <%= link_to 'Providers', providers_path, class: 'btn btn-primary btn-lg' %> | <% if current_user %> <%= link_to "Logout", logout_path %> <% else %>
+      <%= link_to "Sign Up", users_path %> | <%= link_to "Login", login_path %> <% end %>
+      </div>
+    </nav>
     <div class="container">
       <%= yield %>
     </div>

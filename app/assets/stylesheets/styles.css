@@ -1,0 +1,41 @@
+$white: rgba(248, 255, 229, 1);
+$black: rgba(28, 17, 10, 1);
+$blue: rgba(0, 123, 167, 1);
+$red: rgba(204, 54, 46, 1);
+$yellow: rgba(255, 196, 61, 1);
+$green: #11b237
+
+body {
+  background-color: lightskyblue;
+}
+
+.container {
+  clear: both;
+  text-align: center;
+  background-color: $blue;
+}
+
+.navbar {
+  height: 15px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+}
+
+#get_healthy {
+  display: inline;
+  position: relative;
+  top: -47px;
+  left: 45px;
+}
+
+#star {
+  position: relative;
+  top: 55px;
+  left: -40px;
+}
+
+#links {
+  float: right;
+  display: inline;
+}

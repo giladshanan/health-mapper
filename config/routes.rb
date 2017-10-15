@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
 
+  resources :providers, except: [:update, :edit, :destroy]
+
   root "users#new"
+
 
 end
