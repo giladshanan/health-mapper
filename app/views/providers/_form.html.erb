@@ -5,8 +5,9 @@
   </fieldset>
 
   <fieldset class="form-group">
+    <small class="text-muted">You can enter an address or IP. Your IP is <%= request.ip %></small><br>
     <%= f.label :address, 'Address' %>
-    <%= f.text_field :address, class: "form-control" %>
+    <%= f.text_field :address, class: "form-control", value: request.ip %>
   </fieldset>
 
   <%= f.submit 'Add!', class: 'btn btn-primary' %>

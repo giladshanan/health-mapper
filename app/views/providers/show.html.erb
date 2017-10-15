@@ -1,2 +1,6 @@
 <%= @provider.name %>
 <%= @provider.address %>
+<p>Coordinates: <%= @provider.latitude %> <%= @provider.longitude %></p>
+
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@provider.latitude},#{@provider.longitude}&markers=#{@provider.latitude},#{@provider.longitude}&zoom=7&size=320x200&key=AIzaSyC4Tbue1kjdYgyMwThmqf84odWdutY52jE ",
+              class: 'img-fluid img-rounded', alt: "#{@provider.name} on the map"%>
