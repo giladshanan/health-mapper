@@ -45,6 +45,7 @@ group :development, :test do
   gem 'capybara'
   gem 'rspec-rails', '~> 3.6'
   gem 'brakeman'
+  gem 'dotenv-rails'
 end
 
 group :development do

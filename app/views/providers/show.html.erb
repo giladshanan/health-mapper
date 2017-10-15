@@ -2,5 +2,13 @@
 <%= @provider.address %>
 <p>Coordinates: <%= @provider.latitude %> <%= @provider.longitude %></p>
 
-<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@provider.latitude},#{@provider.longitude}&markers=#{@provider.latitude},#{@provider.longitude}&zoom=7&size=320x200&key=AIzaSyC4Tbue1kjdYgyMwThmqf84odWdutY52jE ",
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@provider.latitude},#{@provider.longitude}&markers=#{@provider.latitude},#{@provider.longitude}&zoom=14&size=160x100&maptype=roadmap&scale=2&key=#{ENV["GOOGLE_MAPS_API"]}",
               class: 'img-fluid img-rounded', alt: "#{@provider.name} on the map"%>
+
+<iframe width="300" height="300" frameborder="0" style="border:0"
+ src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_API'] %>&q=<%= @provider.latitude %>,<%= @provider.longitude %>"
+ allowfullscreen>
+</iframe>
+
+
+<!-- @from.distance_from(@to.to_coordinates) -->

@@ -1,0 +1,8 @@
+<iframe width="300" height="300" frameborder="0" style="border:0"
+ src="https://www.google.com/maps/embed/v1/place?key=<%= ENV['GOOGLE_MAPS_API'] %>&q=<%= @provider.latitude %>,<%= @provider.longitude %>"
+ allowfullscreen>
+</iframe>
+
+<%= @provider.name %>
+<%= @provider.address %>
+<p>Coordinates: <%= @provider.latitude %> <%= @provider.longitude %></p>

@@ -1,4 +1,11 @@
 class ProvidersController < ApplicationController
+  def search
+  end
+
+  def find
+    @provider = Provider.near("USA, Chicago, #{params[:address]}")[0]
+  end
+
   def index
     @providers = Provider.order('created_at DESC')
   end

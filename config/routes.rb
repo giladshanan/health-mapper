@@ -10,7 +10,9 @@ Rails.application.routes.draw do
 
   resources :providers, except: [:update, :edit, :destroy]
 
-  root "providers#index"
+  get '/search' => 'providers#find'
+
+  root "providers#search"
 
 
 end
