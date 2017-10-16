@@ -22,6 +22,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'geocoder'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'jquery-rails'
+gem 'rails_12factor'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -45,7 +46,6 @@ group :development, :test do
   gem 'capybara'
   gem 'rspec-rails', '~> 3.6'
   gem 'brakeman'
-  gem 'dotenv-rails'
 end
 
 group :development do
