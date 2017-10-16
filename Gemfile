@@ -22,7 +22,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'geocoder'
 gem 'bootstrap', '~> 4.0.0.alpha3'
 gem 'jquery-rails'
-gem 'rails_12factor'
+gem 'rails_12factor', group: :production
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
