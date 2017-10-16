@@ -44,6 +44,7 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'dotenv-rails'
   gem 'capybara'
+  gem 'jasmine'
   gem 'rspec-rails', '~> 3.6'
   gem 'brakeman'
 end
