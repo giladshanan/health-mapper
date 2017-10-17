@@ -8,6 +8,11 @@ class ProvidersController < ApplicationController
     @origin = "USA, Chicago, #{params[:address]}"
     @provider = Provider.near(@origin)[0]
     @destination = @provider.full_address
+
+    @ip_address = Provider.new(address: params[:address])
+    @lat = @ip_address.latitude
+    @long = @ip_address.longitude
+    p @lat, @long
   end
 
   def index
