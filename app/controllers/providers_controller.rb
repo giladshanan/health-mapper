@@ -13,9 +13,6 @@ class ProvidersController < ApplicationController
       flash[:error] = "Hm, we couldn't find that address.  Sorry, please try again."
       redirect_to root_path
     end
-    @ip_address = Provider.new(address: params[:address])
-    @lat = @ip_address.latitude
-    @long = @ip_address.longitude
   end
 
   def index
