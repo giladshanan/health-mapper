@@ -1,3 +1,5 @@
 <header><h1 class="display-4">Find the Nearest Provider</h1></header>
-
+  <% flash.each do |key, value| %>
+    <div class="<%= key %>"><%= value %></div>
+  <% end %>
 <%= render 'search_form' %>

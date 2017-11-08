@@ -7,12 +7,15 @@ class ProvidersController < ApplicationController
   def find
     @origin = "USA, Chicago, #{params[:address]}"
     @provider = Provider.near(@origin)[0]
-    @destination = @provider.full_address
-
+    if @provider
+      @destination = @provider.full_address
+    else
+      flash[:error] = "Hm, we couldn't find that address.  Sorry, please try again."
+      redirect_to root_path
+    end
     @ip_address = Provider.new(address: params[:address])
     @lat = @ip_address.latitude
     @long = @ip_address.longitude
-    p @lat, @long
   end
 
   def index
