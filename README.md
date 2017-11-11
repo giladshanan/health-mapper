@@ -1,6 +1,6 @@
 # README: Health Mapper Chicago
 
-Users can enter a location to view a list of the nearest office locations for Health Care Providers.
+Users can enter a location to view a list of the nearest office locations for health care providers.
 
 Below the list, a map will display the directions and the option to select mode of transit.
 
