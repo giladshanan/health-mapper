@@ -1,13 +1,7 @@
 # README: Health Mapper Chicago
 
-Users can create a secure account with full name, email and password.  Optional home and work addresses for finding services nearby those locations.
+Users can enter a location to view a list of the nearest office locations for Health Care Providers.
 
-Users can enter a location or allow the app to use IP coordinates to find their current location.  (Bonus feature - dynamic map allows users to specify a location by dropping a pin)
+Below the list, a map will display the directions and the option to select mode of transit.
 
-The app returns a list of the 3 nearest office locations for Health Navigators, with phone and address.
-
-Below the list, a map will display the 3 nearest options and the driving route.
-Select a route and you are offered the option to open in google maps app.
-
-Users have a profile page where they can store data about their providers.
-Click a link to see more info about a provider.
+Users have a profile page where they can add providers to their list.
